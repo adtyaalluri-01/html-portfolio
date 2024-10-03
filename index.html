@@ -1,15 +1,157 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
 
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
 
-<!-- TODO 4: Add titles/subtitles etc. -->
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
 
-<!-- TODO 5: Add a link to the project pages -->
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-<!-- TODO 7: Add the Contact Me and About Me page links -->
+        .hero {
+            background-color:rgb(255, 255, 255);
+            background-size:contain;
+            background-position: center;
+            color: rgb(0, 0, 0);
+            padding: 100px 20px;
+            text-align:center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .about, .projects, .contact {
+            margin-top: 50px;
+        }
+
+        .about img {
+            border-radius: 150%;
+            width: 250px;
+        }
+
+        .project-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .project-item {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Web Developer | Designer | Programmer</p>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <img src="https://i.pinimg.com/564x/00/3e/5a/003e5afc1d5f1b10c0e477651df3a773.jpg" alt="Profile Picture">
+        <p>Hello! I'm a web developer with experience in creating beautiful and functional websites. I love coding and designing interactive experiences.</p>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Project 1</h3>
+                <p>Description of the project goes here. Include details about the technologies used and the purpose of the project.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 2</h3>
+                <p>Description of the project goes here. Include details about the technologies used and the purpose of the project.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 3</h3>
+                <p>Description of the project goes here. Include details about the technologies used and the purpose of the project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
